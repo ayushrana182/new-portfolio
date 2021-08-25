@@ -4,7 +4,16 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    fontFamily: {
+      
+      'lobster': ['"Lobster"', ],
+     },
+    extend:{
+      colors: {
+      green:"#00f260"
+      }
+    },
+ 
   },
   variants: {
     extend: {},
