@@ -11,3 +11,15 @@ export interface ISkill {
     name: string
     Icon:IconType
 }
+
+export interface IProject {
+    name: string,
+    description: string,
+    image_path: string,
+    deployed_url: string,
+    github_url: string,
+    category: Cateogry[],
+    key_tech:string[],
+}
+
+export type Cateogry = "React" | "JavaScript" | "TypeScript" | "Web3" | "GraphQL" | "NodeJS";
