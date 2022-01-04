@@ -4,6 +4,7 @@ import { GoLocation } from "react-icons/go"
 import { GiTie } from "react-icons/gi"
 import { SiFiverr, SiUpwork } from "react-icons/si"
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 
 
 
@@ -15,12 +16,12 @@ const Sidebar = () => {
     }
     return (
         <div>
-            <img src="https://fiverr-res.cloudinary.com/image/upload/t_profile_original,q_auto,f_auto/v1/attachments/profile/photo/1646b4d48e4a4d641c292649e873dc39-1573446490241/d70e2e28-841c-48a3-92e6-e055662e10b8.jpg" alt="User Image" className="w-32 h-32 mx-auto rounded-full" />
+            <Image src="https://avatars.githubusercontent.com/u/43984189?v=4" alt="User Image" className="mx-auto rounded-full " height="128px" width="128px" layout="intrinsic" quality={100}/>
 
-            <h3 className="my-4 text-3xl font-medium tracking-wider font-lobster"> <span className="text-green"> Ayush Dhoj  </span>Rana </h3>
+            <h3 className="my-4 text-3xl font-medium tracking-wider font-lobster"> <span className="text-green"> Ayush </span>Rana </h3>
 
-            <p className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-full">Web Developer</p>
-            <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-full" href="" download="name">
+            <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Web Developer</p>
+            <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200" href="/assets/Ayush Resume.pdf" download="Ayush Resume.pdf">
                 <GiTie className="w-6 h-6" />
                 Download Resume</a>
 
